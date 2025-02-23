@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025年部分考生初试成绩查询</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .top-nav {
+            background-color: white;
+            padding: 10px 20px;
+            border-bottom: 1px solid #e8e8e8;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+        }
+
+        .logo-text {
+            font-family: "方正姚体", "FZYaoTi", sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .nav-links {
+            display: flex;
+            margin-left: 20px;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover {
+            color: #1890ff;
+        }
+
+        .right-nav {
+            margin-left: auto;
+        }
+
+        .banner {
+            background-color: #1890ff;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .banner h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: normal;
+        }
+
+        .banner p {
+            margin: 10px 0 0;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .province-list {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 4px;
+        }
+
+        .provinces {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .province {
+            padding: 5px 15px;
+            cursor: pointer;
+        }
+
+        .province.active {
+            background-color: #1890ff;
+            color: white;
+            border-radius: 3px;
+        }
+
+        .notice {
+            background-color: #e6f7ff;
+            border: 1px solid #91d5ff;
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .school-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .school {
+            color: #666;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        .school:hover {
+            color: #1890ff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-nav">
+        <div class="logo-container">
+            <img src="graduation-cap.png" alt="研招网" class="logo">
+            <span class="logo-text">研招网</span>
+        </div>
+        <div class="nav-links">
+            <a href="#">首页</a>
+            <a href="#">国家政策</a>
+            <a href="#">资讯</a>
+            <a href="#">院校库</a>
+            <a href="#">硕士目录</a>
+            <a href="#">网报公告</a>
+            <a href="#">统考网报</a>
+            <a href="#">网上确认</a>
+            <a href="#">成绩查询</a>
+            <a href="#">网上调剂</a>
+            <a href="#">推免服务</a>
+            <a href="#">信息公开</a>
+            <a href="#">更多</a>
+        </div>
+        <div class="nav-links right-nav">
+            <a href="#">用户中心</a>
+            <a href="#">注册</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <h1>2025年部分考生初试成绩查询</h1>
+        <p>本系统所有数据均为招生单位提供，招生单位对查询结果负责解释。</p>
+    </div>
+
+    <div class="province-list">
+        <div class="provinces">
+            <span class="province">北京</span>
+            <span class="province">天津</span>
+            <span class="province">河北</span>
+            <span class="province">山西</span>
+            <span class="province">内蒙古</span>
+            <span class="province">辽宁</span>
+            <span class="province">吉林</span>
+            <span class="province">黑龙江</span>
+            <span class="province">上海</span>
+            <span class="province active">江苏</span>
+            <span class="province">浙江</span>
+            <span class="province">安徽</span>
+            <span class="province">福建</span>
+            <span class="province">江西</span>
+            <span class="province">山东</span>
+            <span class="province">河南</span>
+            <span class="province">湖北</span>
+            <span class="province">湖南</span>
+            <span class="province">广东</span>
+            <span class="province">广西</span>
+            <span class="province">海南</span>
+            <span class="province">重庆</span>
+            <span class="province">四川</span>
+            <span class="province">贵州</span>
+            <span class="province">云南</span>
+            <span class="province">西藏</span>
+            <span class="province">陕西</span>
+            <span class="province">甘肃</span>
+            <span class="province">青海</span>
+            <span class="province">宁夏</span>
+            <span class="province">新疆</span>
+        </div>
+
+        <div class="notice">
+            列表中显示为灰色的，代表此招生单位未设置查询方式。
+        </div>
+
+        <div class="school-list">
+            <a href="2025考研初试成绩查询.html" class="school">(10284)南京大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(10285)苏州大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(10286)东南大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(10287)南京航空航天大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(10288)南京理工大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(10289)江苏科技大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(10290)中国矿业大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(10291)南京工业大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(10292)常州大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(10293)南京邮电大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(10294)河海大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(10295)江南大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(10298)南京林业大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(10299)江苏大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(10300)南京信息工程大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(10304)南通大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(10305)盐城工学院</a>
+<a href="2025考研初试成绩查询.html" class="school">(10307)南京农业大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(10312)南京医科大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(10313)徐州医科大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(10315)南京中医药大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(10316)中国药科大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(10319)南京师范大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(10320)江苏师范大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(10323)淮阴师范学院</a>
+<a href="2025考研初试成绩查询.html" class="school">(10324)盐城师范学院</a>
+<a href="2025考研初试成绩查询.html" class="school">(10327)南京财经大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(10329)江苏警官学院</a>
+<a href="2025考研初试成绩查询.html" class="school">(10330)南京体育学院</a>
+<a href="2025考研初试成绩查询.html" class="school">(10331)南京艺术学院</a>
+<a href="2025考研初试成绩查询.html" class="school">(10332)苏州科技大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(10333)常熟理工学院</a>
+<a href="2025考研初试成绩查询.html" class="school">(11049)淮阴工学院</a>
+<a href="2025考研初试成绩查询.html" class="school">(11055)常州工学院</a>
+<a href="2025考研初试成绩查询.html" class="school">(11117)扬州大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(11276)南京工程学院</a>
+<a href="2025考研初试成绩查询.html" class="school">(11287)南京审计大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(11460)南京晓庄学院</a>
+<a href="2025考研初试成绩查询.html" class="school">(11463)江苏理工学院</a>
+<a href="2025考研初试成绩查询.html" class="school">(11641)江苏海洋大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(13573)金陵科技学院</a>
+<a href="2025考研初试成绩查询.html" class="school">(82303)国网电力科学研究院</a>
+<a href="2025考研初试成绩查询.html" class="school">(82306)南京水利科学研究院</a>
+<a href="2025考研初试成绩查询.html" class="school">(82927)中国航空研究院(609所)</a>
+<a href="2025考研初试成绩查询.html" class="school">(86205)中国舰船研究院(中国船舶科学研究中心)</a>
+<a href="2025考研初试成绩查询.html" class="school">(86210)中国舰船研究院(江苏自动化研究所)</a>
+<a href="2025考研初试成绩查询.html" class="school">(88001)江苏省中国科学院植物研究所</a>
+<a href="2025考研初试成绩查询.html" class="school">(88002)江苏省血吸虫病防治研究所</a>
+<a href="2025考研初试成绩查询.html" class="school">(89632)中共江苏省委党校</a>
+<a href="2025考研初试成绩查询.html" class="school">(91003)陆军指挥学院</a>
+<a href="2025考研初试成绩查询.html" class="school">(91004)陆军工程大学</a>
+<a href="2025考研初试成绩查询.html" class="school">(91015)海军指挥学院</a>
+<a href="2025考研初试成绩查询.html" class="school">(91031)空军勤务学院</a>
+<a href="2025考研初试成绩查询.html" class="school">(91108)战略支援部队第五十六研究所</a>
+    </div>
+</body>
+</html> 
